@@ -38,12 +38,21 @@ body {
     order:-1;
   }
 
-  .emojis{
+  .emojis {
     display: grid;
-    width: 815px;
-    column-gap: 14px;
-    row-gap: 14px;
-    grid-template-columns: auto auto;
+    grid-template-rows: 300px 350px;
+    grid-template-columns: 410px 415px;
+    gap: 15px; 
+ 
+  }
 
+  .emoji p {
+    display: flex;
+    flex-grow: 1;
+ 
+  }
+
+  .emoji:nth-child(2) {
+    padding-top: px;
   }
 
