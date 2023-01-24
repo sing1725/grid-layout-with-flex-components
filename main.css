@@ -4,11 +4,11 @@ body {
   }
   
   .emoji {
-    display: flex;
-    flex-direction: column;
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
   }
   
   .emoji h2 {
@@ -22,7 +22,11 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    margin-top: top;
+    order: 4;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 94%;
   }
   
   .icon {
@@ -30,11 +34,16 @@ body {
   }
 
   .icon{
-    align-self: center;
-    order: -1;
+    text-align: center;
+    order:-1;
   }
 
-  .emoji{
-    display: flex;
-    
+  .emojis{
+    display: grid;
+    width: 815px;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: auto auto;
+
   }
+
